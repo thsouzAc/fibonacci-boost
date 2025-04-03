@@ -1,10 +1,9 @@
-# função para comparar os resultados sequencial/paralelo > 
+ # calcula Fibonacci de forma sequencial (sem paralelismo)
 
-def fibonacci_seq(n) :
-    if n <= 1 :
+def fibonacci_sequencial(n):
+    if n <= 1:
         return n
-    n1, n2 = 0, 1
-    for _ in range(2, n + 1 ) :
-        n1, n2 = n2, n1 + n2
-
-    return n2
+    a, b = 0, 1
+    for _ in range(2, n + 1):
+        a, b = b, a + b
+    return b
