@@ -14,15 +14,16 @@ def main():
     start = time.time()
     result_seq = fibonacci_sequencial(n)
     tempo_seq = time.time() - start
-    # print(f"\n🔹 Fibonacci Sequencial({n}) = {result_seq}")
-
+    print("-----------------------------------------------------------------------")
+    print(f"🔹 Fibonacci Sequencial de {n} = {result_seq}")
+    print("-----------------------------------------------------------------------")
     start = time.time()
     result_par = fibonacci_parallel(n)
     tempo_par = time.time() - start
-    # print(f"🔹 Fibonacci Paralelo({n}) = {result_par}")
-
+    print(f"🔹 Fibonacci Paralelo de {n} = {result_par}")
+    print("-----------------------------------------------------------------------")
     calcular_metricas(tempo_seq, tempo_par, num_threads)
-
+    print("-----------------------------------------------------------------------")
 
 
 if __name__ == "__main__":
