@@ -1,5 +1,5 @@
 from concurrent.futures import ProcessPoolExecutor
-from fibonacci_sequencial import fibonacci_sequencial
+from functions.fibonacci_sequencial import fibonacci_sequencial
 
 def fibonacci_parallel(n):
     with ProcessPoolExecutor() as executor:
