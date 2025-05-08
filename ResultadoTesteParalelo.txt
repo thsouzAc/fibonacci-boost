@@ -1,0 +1,15 @@
+
+1° teste - n = 40
+
+-----------------------------------------------------------------------
+📊 Métricas de Desempenho :
+⚡ Tempo de execução sequencial: 72.69685 segundos
+⚡ Tempo de execução paralelo  : 47.51281 segundos
+⚡ Tempo de execução interativo: 0.00002 segundos 
+-----------------------------------------------------------------------
+⚡ Speedup paralelo : 1.53x
+⚡ Eficiência paralelo: 0.38
+-----------------------------------------------------------------------
+⚡ Speedup interativo: 3909137.00x
+⚡ Eficiência interativo: 977284.25
+-----------------------------------------------------------------------

@@ -1,10 +1,12 @@
 from concurrent.futures import ProcessPoolExecutor
-from functions.fibonacci_sequencial import fibonacci_sequencial
 
-def fibonacci_parallel(n):
+def fibonacci_parallel(n, nivel=0, max_nivel=2):
+    if n <= 1:
+        return n
+    if nivel >= max_nivel:
+        return fibonacci_parallel(n - 1, nivel + 1, max_nivel) + fibonacci_parallel(n - 2, nivel + 1, max_nivel)
+
     with ProcessPoolExecutor() as executor:
-        futures = [
-            executor.submit(fibonacci_sequencial, n - 1),
-            executor.submit(fibonacci_sequencial, n - 2)
-        ]
-        return sum(f.result() for f in futures)
+        f1 = executor.submit(fibonacci_parallel, n - 1, nivel + 1, max_nivel)
+        f2 = executor.submit(fibonacci_parallel, n - 2, nivel + 1, max_nivel)
+        return f1.result() + f2.result()
