@@ -13,3 +13,37 @@
 ⚡ Speedup interativo: 3909137.00x
 ⚡ Eficiência interativo: 977284.25
 -----------------------------------------------------------------------
+
+2º teste - n = 45 
+
+-----------------------------------------------------------------------
+🔹 Fibonacci (45) = 1134903170
+📊 Métricas de Desempenho :
+⚡ Tempo de execução sequencial: 335.75019 segundos
+⚡ Tempo de execução paralelo  : 312.64224 segundos
+⚡ Tempo de execução interativo: 0.27477 segundos
+⚡ Tempo de execução interativo Paralelo: 0.55713 segundos
+-----------------------------------------------------------------------
+⚡ Speedup paralelo : 1.07x
+⚡ Eficiência paralelo: 0.54
+-----------------------------------------------------------------------
+⚡ Speedup interativo Paralelo: 0.49x
+⚡ Eficiência interativo Paralelo: 0.25
+-----------------------------------------------------------------------
+
+3º teste - n = 35, para forma interativa uma lista_n com valores > 300000
+
+-----------------------------------------------------------------------
+🔹 Fibonacci (35) = 9227465
+📊 Métricas de Desempenho :
+⚡ Tempo de execução sequencial: 2.89046 segundos
+⚡ Tempo de execução paralelo  : 4.83640 segundos
+⚡ Tempo de execução interativo: 31.86636 segundos
+⚡ Tempo de execução interativo Paralelo: 17.44691 segundos
+-----------------------------------------------------------------------
+⚡ Speedup paralelo : 0.60x
+⚡ Eficiência paralelo: 0.30
+-----------------------------------------------------------------------
+⚡ Speedup interativo Paralelo: 1.83x
+⚡ Eficiência interativo Paralelo: 0.91
+---------------------------------------------------------------------
